@@ -18,7 +18,7 @@ import config
 def main():
     # Initialize TensorFlow.
     tflib.init_tf()
-    f = open("karras2019stylegan-ffhq-1024x1024.pkl")
+    f = open("karras2019stylegan-ffhq-1024x1024.pkl", "rb")
     _G, _D, Gs = pickle.load(f)
 
     # Print network details.
